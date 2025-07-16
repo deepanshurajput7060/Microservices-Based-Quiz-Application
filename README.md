@@ -30,17 +30,14 @@ This project is a full-stack backend system built using Spring Boot, following a
 
 ----------------------------------1. Auth Service (auth-service)-----------------------------------
 
-Responsibilities:- User registration (/auth/register)  
-
-                   User login (/auth/login)
-                   
-                   JWT generation & validation logic
+Responsibilities:- 
+                  User registration (/auth/register)  
+                  User login (/auth/login)
+                  JWT generation & validation logic
 
 Key Classes:
             JwtUtil: for token creation and validation
-            
             UserDetailsServiceImpl: loads user from DB
-            
             SecurityConfig: Spring Security configuration
 
 ----------------------------------2. Question Service (question-service)-----------------------------------
