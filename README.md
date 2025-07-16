@@ -28,6 +28,7 @@ This project is a full-stack backend system built using Spring Boot, following a
 
 ####################################### Service Details #######################################
 ----------------------------------1. Auth Service (auth-service)-----------------------------------
+
 Responsibilities:- User registration (/auth/register)
                    User login (/auth/login)
                    JWT generation & validation logic
@@ -38,6 +39,7 @@ Key Classes:
             SecurityConfig: Spring Security configuration
 
 ----------------------------------2. Question Service (question-service)-----------------------------------
+
 Responsibilities:- CRUD operations on questions
                    Routes protected by JWT
 
@@ -48,6 +50,7 @@ Endpoints:
 Exposed via: /question/** through the API Gateway
 
 -----------------------------------------3. Quiz Service (quiz-service)----------------------------------
+
 Responsibilities:- Managing quizzes, linking with questions
 
 Endpoints:
@@ -57,6 +60,7 @@ Endpoints:
 Exposed via: /quiz/** through the API Gateway
 
 --------------------------------------4. API Gateway (api-gateway)---------------------------------------
+
 Responsibilities: Entry point for all clients
                   Route management for microservices
                   Validates JWT tokens using a custom filter
@@ -69,6 +73,7 @@ Configuration (example):
 
 
 ----------------------------------5. Eureka Server (eureka-server)-----------------------------------
+
 Responsibilities: Keeps track of all running services
                   Enables dynamic service discovery
 
