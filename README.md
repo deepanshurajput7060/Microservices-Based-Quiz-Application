@@ -27,15 +27,20 @@ This project is a full-stack backend system built using Spring Boot, following a
                  7) Spring Cloud Gateway (MVC based)
 
 ####################################### Service Details #######################################
+
 ----------------------------------1. Auth Service (auth-service)-----------------------------------
 
-Responsibilities:- User registration (/auth/register)
+Responsibilities:- User registration (/auth/register)  
+
                    User login (/auth/login)
+                   
                    JWT generation & validation logic
 
 Key Classes:
             JwtUtil: for token creation and validation
+            
             UserDetailsServiceImpl: loads user from DB
+            
             SecurityConfig: Spring Security configuration
 
 ----------------------------------2. Question Service (question-service)-----------------------------------
